@@ -1,5 +1,5 @@
 {
-  "name": "monogatari",
+  "name": "monogatari-ui",
   "version": "0.0.1",
   "description": "基于vant二次封装组件",
   "main": "dist/index.js",

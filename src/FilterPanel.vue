@@ -102,14 +102,6 @@ export default {
             this.list[0].ischecked = true;
             this.count = 1;
             this.selectList = [this.list[0]];
-
-            // let data = {
-            //     count: this.count,
-            //     list: this.list,
-            //     selected: this.selectList
-            // };
-
-            // this.$emit('reset', data); //可有可无，主要是为了测试父组件操作子组件的方法
         },
         // 确认筛选——最主要用途
         sure() {
