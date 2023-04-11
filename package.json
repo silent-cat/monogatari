@@ -1,0 +1,36 @@
+{
+  "name": "monogatari",
+  "version": "0.0.1",
+  "description": "基于vant二次封装组件",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html --no-cache",
+    "bale": "parcel build index.js --no-cache --no-minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silent-cat/monogatari.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silent-cat/monogatari/issues"
+  },
+  "homepage": "https://github.com/silent-cat/monogatari#readme",
+  "dependencies": {
+    "vant": "^2.12.54",
+    "vue": "^2.7.14",
+    "vue-hot-reload-api": "^2.3.4"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.3.0",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.61.0",
+    "vue-template-compiler": "^2.7.14"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
+  }
+}
