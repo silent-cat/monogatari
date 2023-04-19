@@ -1,18 +1,20 @@
-import Vue from 'vue'
-// 全局引入vant
-import Vant from 'vant'
+<template>
+  <div>
+    <van-button @click="showFilterPanel=!showFilterPanel" type="info">点击打开筛选面板</van-button>
+    <m-filter-panel ref="filterPanel" :show="showFilterPanel" :list="list" :title="title" @sure="sureFilter" :column="2" />
+  </div>
+</template>
+  
+  <script>
+import { Button } from 'vant'
 import 'vant/lib/index.css'
+import FilterPanel from '../../../src/FilterPanel'
 
-// 引入自己的组件
-import FilterPanel from './FilterPanel'
-
-// 注册vant组件
-Vue.use(Vant)
-// 注册自己的组件
-Vue.component('m-filter-panel', FilterPanel)
-
-new Vue({
-  el: '#app',
+export default {
+  components: {
+    [Button.name]: Button,
+    mFilterPanel: FilterPanel
+  },
   data() {
     return {
       title: '花的种类',
@@ -23,7 +25,7 @@ new Vue({
         { text: '木本花卉', ischecked: false, type: 'Woody' },
         { text: '观叶植物', ischecked: false, type: 'foliage' },
         { text: '盆栽花卉', ischecked: false, type: 'potting' },
-        { text: '盆栽花卉', ischecked: false, type: 'potting' },
+        { text: '盆栽花卉', ischecked: false, type: 'potting' }
       ]
     }
   },
@@ -35,4 +37,8 @@ new Vue({
       console.log(selected) // 被选中的分类
     }
   }
-})
+}
+</script>
+  
+  <style>
+</style>
