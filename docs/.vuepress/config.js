@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/monogatari-ui/',
+  base: '/monogatari/',
   title: '物语UI',
   description: '一款基于vant2二次封装的UI组件库',
   themeConfig: {
